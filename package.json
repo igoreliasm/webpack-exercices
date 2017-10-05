@@ -1,0 +1,33 @@
+{
+  "name": "webpack-exercices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "build": "NODE_ENV=development webpack",
+    "build:prod": "webpack",
+    "nodemon": "nodemon",
+    "serve": "webpack-dev-server",
+    "express": "NODE_ENV=development PORT=8080 node server.js",
+    "express:prod": "npm run build:prod && PORT=8081 node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igoreliasm/webpack-exercices.git"
+  },
+  "author": "Igor Elias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igoreliasm/webpack-exercices/issues"
+  },
+  "homepage": "https://github.com/igoreliasm/webpack-exercices#readme",
+  "devDependencies": {
+    "express": "^4.16.1",
+    "http-server": "0.9.0",
+    "nodemon": "^1.12.1",
+    "webpack": "2.2.1",
+    "webpack-dev-middleware": "1.10.0",
+    "webpack-dev-server": "2.3.0"
+  }
+}
